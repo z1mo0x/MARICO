@@ -1,0 +1,26 @@
+@import "vars";
+@import "fonts";
+@import "header";
+@import "buttons";
+@import "start";
+@import "why";
+@import "one";
+@import "block";
+@import "two";
+@import "small-changes";
+@import "footer";
+@import "../media/adaptive";
+
+body {
+  background-color: #000000;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+.active {
+  a {
+    color: $accent;
+  }
+}

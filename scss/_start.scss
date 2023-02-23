@@ -1,0 +1,59 @@
+.start {
+  padding-top: 100px;
+  &__heading {
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+  &__gradient {
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(90deg, #fe6783 1.9%, #ffbf84 97.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  &__descr {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    width: 700px;
+    margin: 100px auto 50px;
+  }
+
+  &__buttons {
+    text-align: center;
+    button {
+      width: 250px;
+      height: 70px;
+    }
+  }
+
+  &__creators {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__count {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: $grey;
+    margin-left: 10px;
+  }
+}

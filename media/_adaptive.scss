@@ -1,0 +1,459 @@
+@media (max-width: 1400px) {
+  .start {
+    &__gradient {
+      font-size: 90px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .start {
+    &__heading {
+      font-size: 70px;
+    }
+
+    &__gradient {
+      font-size: 75px;
+    }
+
+    &__descr {
+      font-size: 30px;
+    }
+  }
+
+  .why {
+    &__title {
+      font-size: 52px;
+    }
+  }
+  .one {
+    .block__content {
+      margin-bottom: 30px;
+      margin-left: 50px;
+    }
+  }
+
+  .two {
+    &__image {
+      width: 100% !important;
+    }
+
+    &__block {
+      padding: 30px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__bottom {
+      margin-bottom: 50px;
+    }
+
+    &__uptitle {
+      text-align: center;
+    }
+
+    &__top {
+      margin-top: 30px;
+    }
+  }
+
+  .three {
+    .block__content {
+      margin-bottom: 30px;
+      margin-left: 50px;
+    }
+    &__image {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .experts {
+    margin: 150px 0 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .header__button {
+    width: 90px;
+    height: 45px;
+    font-size: 15px;
+    margin-left: 12px;
+  }
+
+  .header__login {
+    font-size: 15px;
+  }
+
+  .header {
+    &__list {
+      li {
+        margin-left: 15px;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .start {
+    &__heading {
+      font-size: 55px;
+    }
+    &__gradient {
+      font-size: 56px;
+    }
+    &__descr {
+      font-size: 26px;
+      width: 500px;
+    }
+
+    &__buttons {
+      button {
+        width: 200px;
+        height: 60px;
+      }
+    }
+  }
+
+  .why {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__card-descr {
+      font-size: 16px;
+    }
+  }
+
+  .stepdescr {
+    font-size: 22px;
+  }
+  .steptitle {
+    font-size: 45px;
+  }
+
+  .block {
+    &__uptitle {
+      font-size: 24px;
+    }
+
+    &__list {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+  }
+
+  .two {
+    &__title {
+      font-size: 45px;
+      line-height: 60px;
+    }
+    &__button {
+      width: 200px;
+    }
+  }
+
+  .experts {
+    &__title {
+      font-size: 50px;
+    }
+  }
+
+  .help {
+    &__text {
+      font-size: 50px;
+    }
+  }
+
+  .prefooter {
+    &__logo {
+      width: 150px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__descr {
+      font-size: 26px;
+    }
+    &__button {
+      height: 60px;
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    .header__submenu {
+      position: static;
+      transform: scaleX(1);
+      transition: all 0.5s;
+      text-align: center;
+      li {
+        border-radius: 5px;
+        margin-left: 0;
+        margin: 0 auto;
+        border-bottom: none;
+        a {
+          font-size: 22px;
+          width: 100%;
+        }
+      }
+    }
+
+    &__list {
+      position: absolute;
+      width: 100%;
+      margin-left: -20px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      transition: all 0.5s;
+      transform: translateY(-150%) scale(1);
+      transform-origin: top;
+      backdrop-filter: blur(5px);
+      li {
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+        background: $accent;
+        border-radius: 5px;
+        a {
+          display: block;
+          text-align: center;
+          font-size: 34px;
+          width: 100%;
+        }
+        &:first-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+
+    &__account {
+      display: none;
+    }
+
+    &__burger {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 200px;
+      z-index: 100;
+      span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-top: 4px;
+        transition: all 0.5s;
+        background: white;
+      }
+    }
+  }
+
+  .active-burger {
+    span {
+      &:first-child {
+        transition: all 0.5s;
+        transform: rotate(45deg) translate(10px);
+      }
+      &:nth-child(2) {
+        transition: all 0.5s;
+        transform: scale(0);
+        transform-origin: -100%;
+      }
+      &:last-child {
+        transition: all 0.5s;
+        transform: rotate(-45deg) translate(10px);
+      }
+    }
+  }
+  .active_list {
+    transform: translateY(-50%) scale(1);
+    transition: all 0.5s;
+  }
+
+  .start {
+    &__heading {
+      font-size: 35px;
+    }
+    &__gradient {
+      font-size: 36px;
+    }
+    &__descr {
+      margin-top: 50px;
+      font-size: 24px;
+    }
+    &__count {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  .why {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__card {
+      margin-top: 30px;
+    }
+
+    &__card-title {
+      font-size: 26px;
+    }
+
+    &__card-descr {
+      font-size: 18px;
+    }
+
+    &__cards {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .stepnumber {
+    font-size: 24px;
+  }
+  .steptitle {
+    font-size: 35px;
+  }
+  .stepdescr {
+    font-size: 18px;
+  }
+
+  .one {
+    &__button {
+      width: 200px;
+      font-size: 16px;
+    }
+
+    .block__content {
+      margin: 0;
+    }
+  }
+
+  .block {
+    margin-top: 100px;
+    &__content {
+      padding: 15px;
+    }
+
+    &__buttons {
+      text-align: center;
+      button {
+        width: 150px;
+        font-size: 16px;
+      }
+    }
+
+    &__uptitle {
+      text-align: center;
+      font-size: 26px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    &__list {
+      text-align: center;
+      li {
+        width: 90%;
+        &::before {
+          top: 15px;
+        }
+      }
+    }
+  }
+
+  .one {
+    padding-top: 100px;
+  }
+
+  .two {
+    margin-top: 100px;
+    &__wrapper {
+      margin-top: 50px;
+    }
+  }
+
+  .three {
+    padding-top: 100px;
+  }
+  .footer {
+    &__intro {
+      font-size: 20px;
+    }
+    &__mail {
+      font-size: 20px;
+    }
+    &__list {
+      li {
+        margin-left: 10px;
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .experts {
+    display: none;
+  }
+  .help {
+    &__text {
+      font-size: 30px;
+    }
+  }
+
+  .prefooter {
+    &__title {
+      font-size: 35px;
+    }
+    &__descr {
+      font-size: 20px;
+    }
+    &__button {
+      width: 170px;
+      font-size: 17px;
+    }
+  }
+}

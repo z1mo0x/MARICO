@@ -1,0 +1,53 @@
+.two {
+  margin-top: 200px;
+
+  &__wrapper {
+    margin-top: 170px;
+  }
+
+  &__block {
+    background: #0d0d0d;
+    position: relative;
+    padding: 30px 0 0 30px;
+    height: 100%;
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+    img {
+      width: 120%;
+    }
+  }
+
+  &__uptitle {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    color: #0fc65c;
+  }
+
+  &__title {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 80px;
+    color: #919191;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__top {
+    margin-top: 15%;
+  }
+
+  &__white {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__button {
+    display: block;
+    margin: 30px auto 0;
+  }
+}

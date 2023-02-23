@@ -1,0 +1,30 @@
+.button {
+  background: $accent;
+  width: 120px;
+  height: 55px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  &:hover {
+    transition: all 0.5s;
+    background: transparent;
+    border: 1px solid $grey;
+  }
+}
+
+.button-grey {
+  background: #0e0e0e;
+  color: $grey;
+  border: 1px solid $grey;
+  transition: all 0.5s;
+  margin-left: 30px;
+  &:hover {
+    transition: all 0.5s;
+    background: $accent;
+    border: none;
+    color: white;
+  }
+}

@@ -1,0 +1,75 @@
+.prefooter {
+  &__logo {
+    width: 200px;
+    margin: 150px auto 50px;
+  }
+
+  &__button {
+    width: 250px;
+    height: 70px;
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+  &__descr {
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+  }
+}
+
+.footer {
+  margin: 200px auto 50px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__intro {
+    flex-direction: column;
+    font-size: 34px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+    img {
+      margin-top: -15px;
+      width: 35px;
+      margin-right: 15px;
+    }
+  }
+
+  &__mail {
+    font-size: 20px;
+    font-weight: 400;
+    color: $grey;
+    text-align: left;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: 45px;
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.4s;
+        text-decoration: none;
+        color: $grey;
+        &:hover {
+          color: $accent;
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+}
