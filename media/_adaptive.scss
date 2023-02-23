@@ -229,10 +229,11 @@
       align-items: center;
       justify-content: center;
       top: 50%;
-      transition: all 0.5s;
+      transition: all 0.8s;
       transform: translateY(-150%) scale(1);
       transform-origin: top;
       backdrop-filter: blur(5px);
+      will-change: transform;
       li {
         margin-top: 20px;
         width: 50%;
@@ -270,13 +271,14 @@
       justify-content: center;
       flex-direction: column;
       margin-left: 200px;
+      will-change: transform;
       z-index: 100;
       span {
         display: block;
         width: 30px;
         height: 3px;
         margin-top: 4px;
-        transition: all 0.5s;
+        transition: all 0.8s;
         background: white;
       }
     }
@@ -289,19 +291,19 @@
         transform: rotate(45deg) translate(10px);
       }
       &:nth-child(2) {
-        transition: all 0.5s;
+        transition: all 0.8s;
         transform: scale(0);
         transform-origin: -100%;
       }
       &:last-child {
-        transition: all 0.5s;
+        transition: all 0.8s;
         transform: rotate(-45deg) translate(10px);
       }
     }
   }
   .active_list {
     transform: translateY(-50%) scale(1);
-    transition: all 0.5s;
+    transition: all 0.8s;
   }
 
   .start {
@@ -439,6 +441,8 @@
     display: none;
   }
   .help {
+    background-size: cover;
+    background-repeat: repeat;
     &__text {
       font-size: 30px;
     }
