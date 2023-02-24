@@ -1,9 +1,20 @@
 @import "pricing_apv";
+@import "mission_apv";
+@import "blog_apv";
+@import "sign&login_apv";
 
 @media (max-width: 1400px) {
   .start {
     &__gradient {
       font-size: 90px;
+    }
+  }
+  .prefooter {
+    &__title {
+      font-size: 60px;
+    }
+    &__descr {
+      font-size: 30px;
     }
   }
 }
@@ -236,6 +247,7 @@
       transform-origin: top;
       backdrop-filter: blur(5px);
       will-change: transform;
+      z-index: 99;
       li {
         margin-top: 20px;
         width: 50%;
@@ -637,7 +649,7 @@
       padding: 0;
       li {
         a {
-          font-size: 10px;
+          font-size: 12px;
         }
       }
     }

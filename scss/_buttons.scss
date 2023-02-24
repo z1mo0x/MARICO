@@ -45,6 +45,28 @@
   cursor: pointer;
 }
 
+.button-with {
+  width: 300px;
+  border-radius: 10px;
+  height: 55px;
+  transition: border 0.5s, color 0.5s;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  img {
+    margin-right: 10px;
+    width: 30px;
+  }
+  &:hover {
+    transition: border 0.5s, color 0.5s;
+    border: 2px solid $accent;
+    color: $accent;
+  }
+}
+
 @media (max-width: 1200px) {
   .price__card-button {
     &:nth-child(2) {

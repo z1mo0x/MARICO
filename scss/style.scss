@@ -10,6 +10,11 @@
 @import "small-changes";
 @import "footer";
 @import "pricing";
+@import "mission";
+@import "team";
+@import "source";
+@import "forms";
+@import "sign";
 
 body {
   background-color: #000000;
@@ -23,6 +28,10 @@ body {
   a {
     color: $accent;
   }
+}
+
+.off_scroll {
+  overflow-y: hidden;
 }
 
 @import "../media/adaptive";
