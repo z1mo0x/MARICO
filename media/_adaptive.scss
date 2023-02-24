@@ -461,3 +461,174 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .header {
+    &__logo {
+      font-size: 28px;
+    }
+    &__burger {
+      margin-left: 50px;
+      span {
+        width: 25px;
+        height: 2px;
+      }
+    }
+    &__list {
+      width: 100%;
+    }
+  }
+
+  .start {
+    &__heading {
+      font-size: 25px;
+    }
+    &__gradient {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+    &__buttons {
+      button {
+        width: 120px;
+        font-size: 12px;
+        height: 50px;
+      }
+    }
+    &__count {
+      font-size: 13px;
+    }
+    &__creators {
+      img {
+        width: 20px;
+      }
+    }
+    &__text {
+      font-size: 13px;
+      margin-left: 3px;
+    }
+  }
+
+  .why {
+    &__title {
+      font-size: 20px;
+      margin: 75px auto 50px;
+    }
+    &__card {
+      img {
+        width: 25px;
+      }
+      &-title {
+        font-size: 20px;
+      }
+      &-descr {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .one {
+    &__button {
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+    }
+  }
+
+  .stepnumber {
+    font-size: 18px;
+  }
+  .steptitle {
+    font-size: 22px;
+  }
+  .stepdescr {
+    font-size: 14px;
+  }
+
+  .block {
+    margin-top: 50px;
+    &__uptitle {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 35px;
+      margin-top: 50px;
+    }
+    &__list {
+      li {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+    &__buttons {
+      button {
+        width: 120px;
+        font-size: 12px;
+        margin-left: 0;
+        height: 50px;
+      }
+    }
+
+    &__image {
+      margin-top: 20px;
+    }
+
+    &__square {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .two {
+    &__title {
+      font-size: 35px;
+      line-height: 30px;
+    }
+    &__uptitle {
+      font-size: 20px;
+    }
+    &__image {
+      width: 115% !important;
+    }
+    &__button {
+      width: 150px;
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+
+  .prefooter {
+    &__title {
+      font-size: 25px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+    &__button {
+      width: 150px;
+      font-size: 14px;
+      height: 50px;
+    }
+  }
+
+  .footer {
+    &__list {
+      padding: 0;
+      li {
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+    &__intro {
+      font-size: 18px;
+      img {
+        margin-right: 5px;
+      }
+    }
+    &__mail {
+      font-size: 14px;
+    }
+  }
+}
