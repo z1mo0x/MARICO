@@ -1,0 +1,102 @@
+@media (max-width: 1400px) {
+  .price {
+    &__title {
+      font-size: 50px;
+    }
+    &__card {
+      width: 370px;
+    }
+
+    &__card-adv {
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .price {
+    &__card {
+      padding: 30px 20px;
+      width: 300px;
+
+      &:last-child {
+        margin-top: 0px;
+      }
+    }
+
+    &__card-title {
+      font-size: 28px;
+    }
+
+    &__card-descr {
+      font-size: 18px;
+    }
+
+    &__card-subtitle {
+      font-size: 17px;
+    }
+
+    &__card-price {
+      font-size: 35px;
+      height: 130px;
+    }
+
+    &__card-divider {
+      font-size: 14px;
+    }
+
+    &__card-adv {
+      font-size: 18px;
+      margin-top: 30px;
+      height: 200px;
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .price {
+    &__card {
+      width: 350px;
+      &:nth-child(3) {
+        margin-top: 50px;
+      }
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .price {
+    &__card {
+      width: 400px;
+      margin-top: 50px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .price {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__card {
+      width: 300px;
+    }
+  }
+}

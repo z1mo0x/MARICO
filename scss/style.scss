@@ -9,7 +9,7 @@
 @import "two";
 @import "small-changes";
 @import "footer";
-@import "../media/adaptive";
+@import "pricing";
 
 body {
   background-color: #000000;
@@ -24,3 +24,5 @@ body {
     color: $accent;
   }
 }
+
+@import "../media/adaptive";

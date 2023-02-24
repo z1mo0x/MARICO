@@ -1,0 +1,134 @@
+.price {
+  &__title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 100px auto 120px;
+  }
+
+  &__cards {
+  }
+
+  &__card {
+    background: #131313;
+    border: 1px solid rgba(112, 112, 112, 1);
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: all 1s;
+    width: 400px;
+    &:hover {
+      background: #3c82f4;
+      transition: all 1s;
+      * {
+        transition: all 1s;
+        color: white;
+        border: none;
+      }
+      .price__card-button {
+        transition: all 1s;
+        background: white;
+        color: $accent;
+      }
+    }
+  }
+
+  &__card-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+  }
+
+  &__card-descr {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    transition: all 1s;
+    color: $grey;
+  }
+
+  &__card-price {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    line-height: 50px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  &__card-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+  }
+
+  &__card-emails {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+  }
+
+  &__card-divider {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    transition: all 1s;
+    color: $grey;
+  }
+
+  &__card-adv {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: left;
+    li {
+      font-size: 17px;
+      font-weight: 400;
+      text-align: left;
+      list-style: none;
+      margin-left: 25px;
+      position: relative;
+      &::before {
+        content: "";
+        background-image: url(../img/pricing/check.svg);
+        width: 22px;
+        height: 15px;
+        top: 13px;
+        left: -25px;
+        position: absolute;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__card-button {
+  }
+
+  &__card-paytime {
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 1s;
+    color: $grey;
+  }
+
+  &__card-different {
+    font-size: 18px;
+    width: max-content;
+    color: $grey;
+    transition: all 1s;
+    font-weight: 400;
+    text-align: left;
+    line-height: 18px;
+    border-bottom: 1px solid $grey;
+  }
+}
