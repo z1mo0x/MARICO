@@ -58,7 +58,12 @@
           </div>
         </div>
         <div class="row price__cards justify-content-around">
-          <div class="col-xl-3 price__card">
+          <div
+            class="col-xl-3 price__card wow zoomInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-offset="300"
+          >
             <div class="price__card-title">Starter</div>
             <div class="price__card-descr">Perfect for tying out Wavium</div>
             <div class="price__card-price">Free</div>
@@ -74,7 +79,12 @@
             </ul>
             <div class="price__card-button button-price">Start For Free</div>
           </div>
-          <div class="col-xl-3 price__card">
+          <div
+            class="col-xl-3 order-3 price__card wow zoomInRight"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            data-wow-offset="300"
+          >
             <div class="price__card-title">Basic</div>
             <div class="price__card-descr">Build your online home</div>
             <div class="price__card-price">
@@ -96,7 +106,12 @@
             </ul>
             <div class="price__card-button">Start Free 14-day Trial</div>
           </div>
-          <div class="col-xl-3 price__card">
+          <div
+            class="col-xl-3 price__card wow zoomIn"
+            data-wow-duration="2s"
+            data-wow-delay="0s"
+            data-wow-offset="300"
+          >
             <div class="price__card-title">Complete</div>
             <div class="price__card-descr">Enhanced engagement</div>
             <div class="price__card-price">
@@ -167,6 +182,12 @@
       crossorigin="anonymous"
     />
     <script src="js/main.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <link rel="stylesheet" href="libs/animate.css" />
+
     <link rel="stylesheet" href="css/style.min.css" />
   </body>
 </html>

@@ -17,7 +17,7 @@
         <div class="row">
           <div class="col-xl-12 header__wrapper">
             <div class="header__logo">
-              <img src="img/header/logo.svg" alt="" />
+              <img src="img/header/logo.svg" alt="" class=""/>
               Marico
             </div>
             <div class="header__burger">
@@ -50,20 +50,32 @@
       </div>
     </header>
     <section class="start">
-      <div class="container">
         <div class="row">
-          <h2 class="start__heading">Own your audience.</h2>
-          <div class="start__gradient">So you don't lose them.</div>
-          <div class="start__descr">
+          <h2 class="start__heading wow fadeInLeft"
+          data-wow-duration="2s"
+          data-wow-offset="200">Own your audience.</h2>
+          <div class="start__gradient wow fadeInRight"
+          data-wow-duration="2s"
+          data-wow-offset="200">So you don't lose them.</div>
+          <div class="start__descr wow fadeInDown "
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+          data-wow-offset="200">
             Turn your audience into email and text message subscribers.
           </div>
-          <div class="start__buttons">
+          <div class="start__buttons wow fadeInDown"
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+          data-wow-offset="200">
             <a href="#"><button class="button">Get Started Now</button></a
             ><a href="#"
               ><button class="button button-grey">View A Demo</button></a
             >
           </div>
-          <div class="start__creators">
+          <div class="start__creators wow fadeInDown"
+          data-wow-duration="2s"
+          data-wow-delay="2s"
+          data-wow-offset="200">
             <img src="img/header/active.svg" alt="" />
             .
             <div class="start__count">1000+</div>
@@ -72,7 +84,11 @@
         </div>
       </div>
     </section>
-    <section class="why">
+    <section
+      class="why wow fadeInUpBig"
+      data-wow-duration="2s"
+      data-wow-offset="200"
+    >
       <div class="container">
         <div class="row">
           <div class="col-xl-10 offset-xl-1">
@@ -109,7 +125,9 @@
         </div>
       </div>
     </section>
-    <section class="one">
+    <section class="one wow slideInLeft"
+    data-wow-duration="2s"
+    data-wow-offset="500">
       <div class="container">
         <div class="stepnumber">STEP 1</div>
         <div class="row">
@@ -153,7 +171,9 @@
         </div>
       </div>
     </section>
-    <section class="two">
+    <section class="two wow slideInRight"
+    data-wow-duration="2s"
+    data-wow-offset="500">
       <div class="container">
         <div class="stepnumber">STEP 2</div>
         <div class="row">
@@ -197,7 +217,10 @@
         </a>
       </div>
     </section>
-    <section class="one">
+    <section class="one wow fadeInLeft"
+    data-wow-duration="2s"
+    data-wow-delay="2s"
+    data-wow-offset="200">
       <div class="container">
         <div class="stepnumber">STEP 3</div>
         <div class="row">
@@ -236,7 +259,9 @@
         </div>
       </div>
     </section>
-    <section class="experts">
+    <section class="experts wow fadeInUp"
+    data-wow-duration="2s"
+    data-wow-offset="500">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-12">
@@ -304,6 +329,12 @@
       crossorigin="anonymous"
     />
     <script src="js/main.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <link rel="stylesheet" href="libs/animate.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </body>
 </html>
